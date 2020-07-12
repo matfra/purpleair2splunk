@@ -10,10 +10,13 @@ It is using Nginx and Lua, from openresty
 - In my setup, this purpleair2splunk containers runs on the same machine than splunk itself and I use the link feature of docker to resolve the splunk container IP address. You may wand to change the --link flag with --add-host if your Splunk lives on another machine.
 
 ## How to
-1) Create a Splunk HEC and copy the token
+1) Create a Splunk HEC and copy the token (I use Splunk Free license)
 ![Splunk HEC token](./images/splunk_hec.png)
 
 2) Register your Purpleair device to use a Custom URL with your Splunk Authorization token
 ![Purpleair configuration](./images/pa_conf.png)
 
 3) Run ./pa2splunk.sh
+
+4) Enjoy your purpleAir data in Splunk
+![Splunk timechart](./images/splunk_timechart.png)
