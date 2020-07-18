@@ -12,6 +12,5 @@ sudo docker run --restart=always \
 	--name pa2splunk \
 	--link splunk \
 	-v $workdir/nginx_conf:/etc/nginx/conf.d \
-    -v $workdir/nginx-lua-prometheus:/usr/local/nginx-lua-prometheus \
 	-p $LISTEN_IP:$LISTEN_PORT:80/tcp \
 	openresty/openresty:alpine

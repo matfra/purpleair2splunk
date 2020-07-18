@@ -1,0 +1,3 @@
+[submodule "nginx-lua-prometheus"]
+	path = nginx-lua-prometheus
+	url = git@github.com:knyar/nginx-lua-prometheus.git
